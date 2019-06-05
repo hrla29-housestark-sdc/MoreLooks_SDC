@@ -1,26 +1,39 @@
-# MoreLooks_SDC
-#System Design Capstone
+# MoreLooks-SDC
 
-Related Projects
-https://github.com/teamName/repo
-https://github.com/teamName/repo
-https://github.com/teamName/repo
-https://github.com/teamName/repo
-Table of Contents
-Usage
-Requirements
-Development
-Usage
-Some usage instructions
+> Project description
 
-Requirements
-An nvmrc file is included if using nvm.
+## Related Projects
 
-Node 6.13.0
-etc
-Development
-Installing Dependencies
+  - https://github.com/teamName/repo
+  - https://github.com/teamName/repo
+  - https://github.com/teamName/repo
+  - https://github.com/teamName/repo
+
+## Table of Contents
+
+1. [Usage](#Usage)
+1. [Requirements](#requirements)
+1. [Development](#development)
+
+## Usage
+
+> Some usage instructions
+
+## Requirements
+
+An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
+
+- Node 6.13.0
+- etc
+
+## Development
+
+### Installing Dependencies
+
 From within the root directory:
 
+```sh
 npm install -g webpack
 npm install
+```
+
