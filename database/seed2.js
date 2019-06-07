@@ -64,18 +64,21 @@ let dummyData = [];
 for (var i = 0; i < 500000; i++) {
   dummyData.push(generateData())
 }
+
+
 var str = JSON.stringify(dummyData, null, 2);
 var data = str.slice(1, str.length - 1) + ','
 
 let writeStream = fs.createWriteStream('../dummydata.json', { flags: 'w' });
 function writeOneMillionTimes(writer, data, encoding, callback) {
-  let i = 22;
+  let i = 12;
   write();
   function write() {
     let ok = true;
     do {
+      console.log(ok)
       i--;
-      if (i === 21) {
+      if (i === 11) {
         writer.write('[', encoding, callback);
       } else if (i === 1) {
         writer.write(data.slice(0, data.length - 1), encoding, callback);
@@ -86,12 +89,14 @@ function writeOneMillionTimes(writer, data, encoding, callback) {
         // See if we should continue, or wait.
         // Don't pass the callback, because we're not done yet.
         ok = writer.write(data, encoding);
+        console.log(ok);
       }
     } while (i > 0 && ok);
     if (i > 0) {
       // had to stop early!
       // write some more once it drains
       writer.once('drain', write);
+      // write()
     }
   }
 }
