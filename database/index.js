@@ -7,6 +7,7 @@ mongoose.connect('mongodb://localhost/morelooks', {useNewUrlParser: true})
   .catch(err => console.error(err))
 
 const productSchema = new mongoose.Schema({
+  id: Number,
   productname: String,
   imageurl: [String],
   shoesizes: [Number],
