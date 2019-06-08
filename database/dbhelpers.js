@@ -5,7 +5,7 @@ const dbhelpers = {
   
   get: () => {
     const randomItem = Math.floor(Math.random() * Math.floor(itemType.length));
-    return Product.find({id: { $gte: 9000000, $lte: 10000000 } ,itemtype: itemType[randomItem]},{id:1, itemtype:1}).limit(5).explain('executionStats')
+    return Product.find({id: { $gte: 9000000, $lte: 10000000 } ,itemtype: itemType[randomItem]},{itemtype: 1}).limit(1).explain('executionStats')
       .then(data => data)
       .catch(err => console.error(err))
   },
