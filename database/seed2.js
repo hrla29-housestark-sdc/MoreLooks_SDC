@@ -1,6 +1,6 @@
 const faker = require('faker');
-const Product = require('./index.js');
-const mongoose = require('mongoose');
+// const Product = require('./index.js');
+// const mongoose = require('mongoose');
 const fs = require('fs')
 
 const generateImage = () => {
@@ -80,7 +80,7 @@ const generateData = () => {
   }
   return data;
 }
-
+module.exports = generateData;
 
 let writeStream = fs.createWriteStream('../dummydata.json', { flags: 'w' });
 function writeOneMillionTimes(writer, encoding, callback) {

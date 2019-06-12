@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/morelooks', {useNewUrlParser: true})
-  .then(() => console.log('connection made'))
+mongoose.connect('mongodb://mongo:27017/morelooks', {useNewUrlParser: true})
+  .then(() => console.log('connection made to MongoDB'))
   .catch(err => console.error(err))
 
 const productSchema = new mongoose.Schema({
