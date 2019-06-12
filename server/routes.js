@@ -4,8 +4,11 @@ const router = express.Router();
 
 router
   .route('/api')
-  .get(controller.get)
+  .get(controller.mongodb.get)
 
+// router 
+//   .route('/api/sql')
+//   .get(controller.postgresql.get)
 // router
 //   .route('/api/purses')
 //   .get(controller.getpurses)

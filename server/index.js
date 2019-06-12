@@ -1,3 +1,4 @@
+require('newrelic')
 const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
@@ -5,9 +6,9 @@ const parser = require('body-parser');
 const router = require('./routes.js');
 
 const server = express();
-const port = 7000;
+const port = 3000;
 
-server.use(morgan('dev'))
+// server.use(morgan('dev'))
 server.use(parser.json())
 server.use(parser.urlencoded({extended: true}))
 
