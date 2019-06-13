@@ -3,4 +3,3 @@ MongoTestResults
 PostgresqlTestResults
 test.yml
 data.json
-newrelic.js
