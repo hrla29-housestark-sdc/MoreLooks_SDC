@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://ec2-18-188-204-248.us-east-2.compute.amazonaws.com:27017/morelooks', {useNewUrlParser: true})
+mongoose.connect('mongodb://ec2-52-15-158-80.us-east-2.compute.amazonaws.com:27017/morelooks', {useNewUrlParser: true})
   .then(() => console.log('connection made to MongoDB'))
   .catch(err => console.error(err))
 
