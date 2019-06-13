@@ -1,5 +1,4 @@
 const Product = require('./index.js');
-const generateData = require('./seed2.js')
 var itemType = ['shoes','dress','earings','bags','bracelet','purses','dress','suit','shirt','t-shirt','jacket','pants',
 'watch','small bags','tie','socks','towel']
 const dbhelpers = {
