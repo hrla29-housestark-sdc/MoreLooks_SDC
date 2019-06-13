@@ -1,6 +1,5 @@
 node_modules
 npm-debug.log
 dummydata.json
-newrelic.js
 test.yml
 postgresql
