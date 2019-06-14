@@ -4,5 +4,4 @@ PostgresqlTestResults
 test.yml
 data.json
 mongo_config.js
-.env 
 newfile

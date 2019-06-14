@@ -9,7 +9,7 @@
   },
   "scripts": {
     "seed": "node database/seed2.js",
-    "start": "env-cmd node server/index.js",
+    "start": "node server/index.js",
     "build": "webpack -d --watch",
     "db:insert": "mongoimport -d morelooks -c products --file dummydata.json --jsonArray"
   },
@@ -22,7 +22,6 @@
     "babel-loader": "^8.0.6",
     "body-parser": "^1.19.0",
     "css-loader": "^2.1.1",
-    "env-cmd": "^9.0.3",
     "express": "^4.16.4",
     "faker": "^4.1.0",
     "fast-csv": "^2.5.0",
