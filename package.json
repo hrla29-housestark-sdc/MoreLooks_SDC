@@ -9,7 +9,7 @@
   },
   "scripts": {
     "seed": "node database/seed2.js",
-    "start": "node server/index.js",
+    "start": "env-cmd node server/index.js",
     "build": "webpack -d --watch",
     "db:insert": "mongoimport -d morelooks -c products --file dummydata.json --jsonArray"
   },
