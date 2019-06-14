@@ -3,4 +3,5 @@ MongoTestResults
 PostgresqlTestResults
 test.yml
 data.json
-mongo_config.js 
+mongo_config.js
+.env 
