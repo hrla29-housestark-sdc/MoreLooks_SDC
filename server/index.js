@@ -1,10 +1,13 @@
 // require('newrelic')
 const express = require('express');
 const path = require('path');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const parser = require('body-parser');
 const router = require('./routes.js');
 
+// const redisClient = requiire('redis').createClient;
+// const redis = redisClient(6379, 'localhost');
+// module.exports = redis;
 
 const server = express();
 const port = 3000;
