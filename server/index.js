@@ -5,9 +5,6 @@ const path = require('path');
 const parser = require('body-parser');
 const router = require('./routes.js');
 
-// const redisClient = requiire('redis').createClient;
-// const redis = redisClient(6379, 'localhost');
-// module.exports = redis;
 
 const server = express();
 const port = 3000;
